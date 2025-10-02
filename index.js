@@ -33,7 +33,7 @@ client.once("ready", () => {
 });
 
 client.on("messageCreate", async (message) => {
-  if (!message.content.startsWith("!bc") || message.author.bot) return;
+  if (!message.content.startsWith("-bc") || message.author.bot) return;
 
   const allowedRoleId = config.allowedRoleId;
   const member = message.guild.members.cache.get(message.author.id);
